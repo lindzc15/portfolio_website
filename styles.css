@@ -367,13 +367,13 @@ a:hover {
 }
 
 .mobile-image {
-    height: 300px;
+    height: 500px;
     width: auto;
     box-shadow: 4px 4px 8px var(--dark-brown-opaque);
 }
 
 .wireframe {
-    height: 300px;
+    height: 350px;
 }
 
 .ux-step {
