@@ -118,7 +118,8 @@
                             id="projects" 
                             onmouseover="showOpenStar(this)" 
                             onmouseleave="hideOpenStar(this)"
-                            onclick="setActiveNav(this)">
+                            onclick="setActiveNav(this)
+                                    setActiveProject(document.getElementById('community-coffee'));">
                             <svg 
                                 xmlns="http://www.w3.org/2000/svg" 
                                 class="star-open" 
@@ -189,19 +190,15 @@
             <div id="dynamic-body">
                 <div class="body-content" id="about-body">
                     <p id="about-p">
-                        Hello and welcome to my website! My name is Lindzey Coonradt. I am a product designer with a strong technical background in web development. My work focuses focused on building responsive web and mobile applications with intuitive user interfaces. 
-                        I enjoy combining UI/UX design with modern web technologies to create practical tools and interactive experiences.
-                        I have created several full stack web applications and am in search of opportunities
-                        that allow me to continue creating in order to continue expanding my knowledge and skillset.
-                        Through an internship in Software QA, I have gained hands on experience 
-                        that has helped me strengthen my attention to detail and careful analysis of the end-user perspective. I am excited for what is to come in my journey as a designer and would love to hear from you!
+                        I’m Lindzey Coonradt, a product designer with a strong software engineering background who creates intuitive web and mobile experiences from Figma through implementation. I enjoy designing applications that are both pleasing to look at and
+                        seamless to use. In my design process, I strive for strong attention to detail and careful analysis of end-user perspectives to create positive user experiences. I know that the little details can truly enhance an application!
                     </p>
                     <h2 class="sub-header" id="skills-header">
-                        UI/Design Skills
+                        Design Skills
                     </h2>
                     <div class="tags" id="about-tags">
                         <div class="tag">
-                            User centered design
+                            User-centered design
                         </div>
                         <div class="tag">
                             Responsive design
@@ -214,7 +211,7 @@
                         </div>
                     </div>
                     <h2 class="sub-header" id="skills-header">
-                        Frontend Skills
+                        Engineering Skills
                     </h2>
                     <div class="tags" id="about-tags">
                         <div class="tag">
@@ -232,44 +229,33 @@
                         <div class="tag">
                             React
                         </div>
-                    </div>
-                    <h2 class="sub-header" id="skills-header">
-                        Backend Skills
-                    </h2>
-                    <div class="tags" id="about-tags">
                         <div class="tag">
                             Python
                         </div>
                         <div class="tag">
-                            Node.js
-                        </div>
-                        <div class="tag">
-                            SQL
-                        </div>
-                        <div class="tag">
-                            PostgreSQL
-                        </div>
-                    </div>
-                    <h2 class="sub-header" id="skills-header">
-                        Other skills
-                    </h2>
-                    <div class="tags" id="about-tags">
-                        <div class="tag">
                             Git / GitHub
                         </div>
-                        <div class="tag">
-                            AWS
-                        </div>
-                        <div class="tag">
-                            Jira
-                        </div>
-                        <div class="tag">
-                            mabl (automated testing)
-                        </div>
-                        <div class="tag">
-                            Docker
-                        </div>
                     </div>
+
+                    <div class="homepage-project"
+                        onclick="
+                                    setActiveNav(document.getElementById('projects'));
+                                    setActiveProject(document.getElementById('community-coffee'));
+                                ">
+                        <h2 id="home-project-h2">
+                            Design Project - Community Coffee Mobile App 
+                            <svg 
+                                id="arrow-icon"
+                                xmlns="http://www.w3.org/2000/svg" 
+                                viewBox="0 0 512 512" fill="#4D2C1D">
+                                <path 
+                                fill="#4D2C1D" 
+                                d="M0 256a256 256 0 1 0 512 0a256 256 0 1 0-512 0m387.3 11.3l-104 104c-4.6 4.6-11.5 5.9-17.4 3.5s-9.9-8.3-9.9-14.8v-56h-96c-17.7 0-32-14.3-32-32v-32c0-17.7 14.3-32 32-32h96v-56c0-6.5 3.9-12.3 9.9-14.8s12.9-1.1 17.4 3.5l104 104c6.2 6.2 6.2 16.4 0 22.6"/>
+                            </svg>
+                        </h2>
+                        <img id='ccimage' src="./assets/communityCoffeeCard.png" alt="Community Coffe Mobile App Home Screen">
+                    </div>
+                    
                 </div>
                 <div class="body-content" id="work-body">
                     <div class="work-container">
@@ -278,16 +264,16 @@
                             <p><i>September 2025 - Present</i></p>
                             <ul>
                                 <li>
-                                    Performed manual testing for an e-commerce web applications
+                                    Performed manual and automated testing for an e-commerce web application
                                 </li>
                                 <li>
-                                    Developed automated tests using mabl and tracked issues in Jira
+                                    Developed test plans designed for full coverage, from core flows to edge cases
                                 </li>
                                 <li>
-                                    Documented test progress in AIO Test Management
+                                    Documented test progress in AIO Test Management and tracked issues in Jira
                                 </li>
                                 <li>
-                                    Performed launch day testing for several major project releases
+                                    Performed launch day testing for several major project releases, including replatforming our site
                                 </li>
                             </ul>
                             <div class="tags">
@@ -314,16 +300,16 @@
 
                     <div id="projects-nav">
                         <h4 class="project-nav-item active-project-nav" id="community-coffee" onclick="setActiveProject(this)">
-                            Community Coffee - UI/UX Case Study
+                            Community Coffee Mobile App - Product Design
                         </h4>
                         <h4 class="project-nav-item" id="lets-eat" onclick="setActiveProject(this)">
-                            Let's Eat - Full Stack Web Application
+                            Let's Eat Full Stack Web Application - Engineering
                         </h4>
                         <h4 class="project-nav-item" id="loops-knots" onclick="setActiveProject(this)">
-                            Loops & Knots - Full Stack Web Application
+                            Loops & Knots Full Stack Web Application - Engineering
                         </h4>
                         <h4 class="project-nav-item" id="shopping-manager" onclick="setActiveProject(this)">
-                            Shopping List Manager - Android Mobile App
+                            Shopping List Manager Android Mobile App - Engineering
                         </h4>
                     </div>
 
@@ -359,7 +345,7 @@
                                     UX Principles
                                 </div>
                                  <div class="tag">
-                                    Human Centered Design
+                                    Human-centered Design
                                 </div>
                                  <div class="tag">
                                     Wireframing
@@ -389,17 +375,17 @@
                                 a few ideas before landing on the screens I would begin creating digitally.
                             </p>
                             <div class="mobile-images">
-                                <img class="mobile-image wireframe" src="./assets/wireframe-1.jpeg" alt="Mobile app image of add grocery list item screen">
-                                <img class="mobile-image wireframe" src="./assets/wireframe-2.jpeg" alt="Mobile app image of pantry inventory screen">
-                                <img class="mobile-image wireframe" src="./assets/wireframe-3.jpeg" alt="Mobile app image of add recipe screen">
+                                <img class="mobile-image wireframe" src="./assets/wireframe-1.jpeg" alt="Handdrawn wireframe of Community Coffee cart screen">
+                                <img class="mobile-image wireframe" src="./assets/wireframe-2.jpeg" alt="Handdrawn wireframe of Community Coffee event screen">
+                                <img class="mobile-image wireframe" src="./assets/wireframe-3.jpeg" alt="Handdrawn wireframe of Community Coffee menu screen">
                             </div>
                                 <p class="ux-paragraph">I created my wireframes in Figma and then used them to create a low fidelity prototype. After getting user feedback on the prototype, the biggest thing
                                 I found was that users across the board liked the order again button. I knew that I should be sure to keep this feature in the final design.
                                 </p>
                             <div class="mobile-images">
-                                <img class="mobile-image" src="./assets/lofi-2.png" alt="Mobile app image of add grocery list item screen">
-                                <img class="mobile-image" src="./assets/lofi-1.png" alt="Mobile app image of pantry inventory screen">
-                                <img class="mobile-image" src="./assets/lofi-3.png" alt="Mobile app image of add recipe screen">
+                                <img class="mobile-image" src="./assets/lofi-2.png" alt="Digital wireframe of Community Coffee cart screen">
+                                <img class="mobile-image" src="./assets/lofi-1.png" alt="Digital wireframe of Community Coffee event screen">
+                                <img class="mobile-image" src="./assets/lofi-3.png" alt="Digital wireframe of Community Coffee menu screen">
                             </div>
                             <p class="ux-paragraph">After getting feedback on the low fidelity prototype, I moved to the mockup. I began selecting colors and fonts, creating components, and recreating the screens
                                 I had designed for the first prototype. After creating the first draft of the mockup, I rereviewed each screen carefully for any important elements I had missed. I found a few
@@ -421,9 +407,9 @@
                                 mockup I created will benefit both customers and employees, and will allow Community Coffee to thrive!
                             </p>
                             <div class="mobile-images">
-                                <img class="mobile-image" src="./assets/mockup-2.png" alt="Mobile app image of add grocery list item screen">
-                                <img class="mobile-image" src="./assets/mockup-1.png" alt="Mobile app image of pantry inventory screen">
-                                <img class="mobile-image" src="./assets/mockup-3.png" alt="Mobile app image of add recipe screen">
+                                <img class="mobile-image" src="./assets/mockup-2.png" alt="High fidelity mockup of Community Coffee cart screen">
+                                <img class="mobile-image" src="./assets/mockup-1.png" alt="High fidelity mockup of Community Coffee event screen">
+                                <img class="mobile-image" src="./assets/mockup-3.png" alt="High fidelity mockup of Community Coffee menu screen">
                             </div>
                     </div>
                     
@@ -540,7 +526,7 @@
                                    Integrated Ravelry API and PostgreSQL for saved yarns and patterns
                                 </li>
                                 <li>
-                                   Imbedded videos for knitting and crochet tutorials
+                                   Embedded videos for knitting and crochet tutorials
                                 </li>
                             </ul>
                     
