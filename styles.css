@@ -1,9 +1,9 @@
 :root {
     --dark-brown: #4D2C1D;
     --medium-brown: #97704F;
-    --light-brown: #DEAF81;
-    --light-brown-opaque: #DEAF8166;
-    --dark-brown-opaque: #4D2C1D66;
+    --light-brown: #CB823A;
+    --light-brown-opaque: #CB823A66;
+    --dark-brown-opaque: ##A5958E66;
 }
 
 body {
@@ -274,14 +274,10 @@ button:hover {
     margin: 0px;
     padding-top: 10px;
     padding-bottom: 10px;
-    opacity: 50%;
+    opacity: 75%;
     flex: 0 0 auto;
 }
 
-.project-nav-item:hover{
-    box-shadow: inset 0 -3px 0 0 var(--dark-brown);
-    cursor: pointer;
-}
 
 .active-project-nav{
     opacity: 100%;
@@ -479,6 +475,13 @@ a:hover {
     height: 1rem;
 }
 
+@media (hover: hover) and (pointer: fine) {
+    .project-nav-item:hover {
+        box-shadow: inset 0 -3px 0 0 var(--dark-brown);
+        cursor: pointer;
+    }
+}
+
 /* FOR PHONES, SWITCH TO VERTICALLY STACKED LAYOUT */
 @media screen and (max-width: 784px) {
     #content {
@@ -528,6 +531,7 @@ a:hover {
         max-width: 100%;
         height: auto;
     }
+    
 } 
 
 
